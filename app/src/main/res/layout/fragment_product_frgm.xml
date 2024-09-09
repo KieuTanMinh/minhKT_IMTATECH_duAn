@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5ECD9"
+    tools:context=".Fragment.Product_Frg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:hint="Tìm kiếm sản phẩm"
+                    android:padding="2dp"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Tìm kiếm"
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/icDeleteSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_remotetimkiem"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/filterProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_filter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Menu Sản Phẩm"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtNotifi3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="Không có sản phẩm!"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

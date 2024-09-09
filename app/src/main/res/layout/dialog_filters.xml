@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00B8D4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="Lọc Sản Phẩm"
+            android:textColor="#DD2C00"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rdoSPAll"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingStart="5dp"
+                android:text="Tất cả"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <RadioButton
+                android:id="@+id/rdoSPTL"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingStart="5dp"
+                android:text="Thể loại"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/rdoSPGia"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingStart="5dp"
+                android:text="Giá"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

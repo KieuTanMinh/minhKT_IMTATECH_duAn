@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00B8D4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:id="@+id/txtHDTenSP"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:text="Teen San Pharưerwerwerwerwerwerm"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtHDDonGia"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:maxWidth="250dp"
+            android:text="88.888"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtHDSL"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxWidth="250dp"
+            android:text="88"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

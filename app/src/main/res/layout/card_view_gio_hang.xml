@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_gioHang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFAB00"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgGHAnhSP"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bac_xiu" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtGHTenSP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="200"
+                        android:text="tittle"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:id="@+id/txtGHGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tittle"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/groupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btnHGTru"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_giam_sp" />
+
+            <TextView
+                android:id="@+id/edtGHSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="88"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnGHCong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_tang_sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
