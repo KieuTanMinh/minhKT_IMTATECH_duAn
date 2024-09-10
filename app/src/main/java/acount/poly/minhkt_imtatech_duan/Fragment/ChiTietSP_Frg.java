@@ -1,5 +1,4 @@
 package acount.poly.minhkt_imtatech_duan.Fragment;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -16,13 +15,13 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import java.util.ArrayList;
+import acount.poly.minhkt_imtatech_duan.Dao.GioHang_Dao;
+import acount.poly.minhkt_imtatech_duan.MainActivity;
+import acount.poly.minhkt_imtatech_duan.Model.GioHang;
+import acount.poly.minhkt_imtatech_duan.Model.SanPham;
+import acount.poly.minhkt_imtatech_duan.R;
 
-import acount.poly.minhkt_imta_duan.Dao.GioHang_Dao;
-import acount.poly.minhkt_imta_duan.MainActivity;
-import acount.poly.minhkt_imta_duan.Model.GioHang;
-import acount.poly.minhkt_imta_duan.Model.SanPham;
-import acount.poly.minhkt_imta_duan.R;
+import java.util.ArrayList;
 
 public class ChiTietSP_Frg extends Fragment {
 
@@ -202,7 +201,7 @@ public class ChiTietSP_Frg extends Fragment {
         return view;
     }
 
-//    Tính tổng tiền
+    //    Tính tổng tiền
     public double tinhTien(int mSoLuong, double mDonGia, double mDonGiaGoc){
         double tongTien = 0;
         tongTien = mSoLuong * (mDonGia + mDonGiaGoc);

@@ -18,10 +18,10 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import acount.poly.minhkt_imta_duan.Dao.User_Dao;
-import acount.poly.minhkt_imta_duan.LoginActivity;
-import acount.poly.minhkt_imta_duan.Model.User;
-import acount.poly.minhkt_imta_duan.R;
+import acount.poly.minhkt_imtatech_duan.Dao.User_Dao;
+import acount.poly.minhkt_imtatech_duan.LoginActivity;
+import acount.poly.minhkt_imtatech_duan.Model.User;
+import acount.poly.minhkt_imtatech_duan.R;
 
 
 public class Account_Frg extends Fragment {
